@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(34, 33, 33);
+}
+
+/*----------------------tag--------------------*/
+
+a{
+    text-decoration: none;
+}
+
+main{
+    position: absolute;
+    height: 680px;
+    width: 100%;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+footer{
+    margin-left: 25px;
+    margin-top: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+footer div{
+    cursor: pointer;
+}
+/*----------------------class.--------------------*/
+.mainMenu{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.container{
+    
+}
+
+.content{
+    margin-top: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.content div{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.content p{
+    font-size: 14px;
+    margin-top: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.content h3{
+    text-align: center;
+    width: 300px;
+    cursor: auto;
+}
+
+.newTasks{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newTasks p{
+    margin-top: 0px;
+    margin-left: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(58, 57, 57);
+}
+
+.newTasks div{
+    color: rgb(68, 68, 68);
+    border: 0px;
+    background-color: transparent;
+    margin-left: 550px;
+}
+
+.addTask{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+    margin-left: -520px;
+}
+
+.addTask span{
+    margin-left: -120px;
+    margin-top: 7px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.addTask div{
+    width: 100px;
+    height: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.userInfo{
+    margin-top: -35px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+/*----------------------id#-----------------------*/
+
+
+/*menu*/
+
+#iconUser{
+    margin-top: 3px;
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+#iconUser img{
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+#add{
+    color: aliceblue;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+#add:hover{
+    background-color: rgb(58, 57, 57);
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*------------------------------------------------*/
+
+#view {
+    cursor: pointer;
+}
+
+#view span{
+    margin-left: -25px;
+    margin-top: -3px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#menu{
+    color: aliceblue;
+    margin-top: 12px;
+    margin-left: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#home{
+    margin-top: 12px;
+    margin-left: 5px;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+#home:hover, #menu:hover, #info:hover, #notification:hover{
+    background-color: rgb(73, 73, 73);
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+#search{
+    background-color: rgba(34, 33, 33, 0.822);
+    height: 30px;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+#search:focus{
+    outline: none;
+}
+
+#search::placeholder{
+    padding-left: 10px;
+}
+
+#notification{
+    color: aliceblue;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+#info{
+    color: aliceblue;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+#iconFooter{
+    margin-left: -25px;
+    margin-top: -2px;
+    position: absolute;
+}
+
+.menuFuncNone{
+    height: 751px;
+    width: 300px;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+    margin-left: -300px;
+}
+
+.menuFunc{
+    height: 751px;
+    width: 300px;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+}
+
+@keyframes menuSide{
+    from{
+        margin-left: -300px;
+    }to{
+        margin-left: 0px;
+    }
+}
+
+@keyframes menuSideReverse{
+    from{
+        margin-left: 0px;
+    }to{
+        margin-left: -300px;
+    }
+}
+
+@keyframes main{
+    from{
+        margin-left: 0px;
+    }to{
+        margin-left: 70px;
+    }
+}
+
+@keyframes mainReverse{
+    from{
+        margin-left: 70px;
+    }to{
+        margin-left: 0px;
+    }
+}
+
+@keyframes footer{
+    from{
+        margin-left: 0px;
+    }to{
+        margin-left: 150px;
+    }
+}
+
+@keyframes footerReverse{
+    from{
+        margin-left: 150px;
+    }to{
+        margin-left: 0px;
+    }
+}
+
+.menuFunc span{
+    color: aliceblue;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: -3px;
+}
+
+.menuFunc li{
+    color: aliceblue;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-left: 50px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.menuFunc div{
+    border: 10px solid white;
+    width: 100px;
+    height: 5px;
+    background-color: aliceblue;
+}
